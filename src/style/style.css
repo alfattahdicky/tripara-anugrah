@@ -1,0 +1,35 @@
+@import "../style/cooperation.css";
+@import "../style/product.css";
+@import "../style/contact.css";
+@import "../style/about-billboard.css";
+@import "../style/header-billboard.css";
+@import "../style/about-interior.css";
+@import "../style/header-interior.css";
+@import "../style/footer.css";
+@import "../style/reason.css";
+@import "../style/about.css";
+@import "../style/header.css";
+
+:root {
+  --first-color: #191919;
+  --second-color: #ffffff;
+  --three-color: #e6e8e6;
+  --four-color: #ced0ce;
+  --five-color: #f15025;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  --webkit-scroll-behaviour: smooth;
+  --moz-scroll-behaviour: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}

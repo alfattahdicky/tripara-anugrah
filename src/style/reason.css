@@ -1,0 +1,113 @@
+.reason {
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.reason .intro {
+  margin: 20px 0 10px;
+}
+
+.reason .intro h2 {
+  font-size: 8vmin;
+}
+
+.reason .intro p {
+  font-size: 5vmin;
+}
+
+.reason .cards {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reason .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--three-color);
+  transition: border .3s ease-in-out, box-shadow .4s ease-out;
+}
+
+.reason .cards .card:hover:nth-child(1) {
+  border-color: #FBBF07;
+}
+
+.reason .cards .card:hover:nth-child(2) {
+  border-color: #0765fb;
+}
+
+.reason .cards .card:hover:nth-child(3) {
+  border-color: #5BB38A;
+}
+
+.reason .cards span {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.reason .cards i {
+  margin: 30px 0 0;
+  font-size: 2.5rem;
+}
+
+.reason .cards .award {
+  background-color: rgba(255, 255, 0, 0.3);
+  color: #FBBF07;
+}
+
+.reason .cards .clock {
+  background-color: #0765fb3d;
+  color: #0765fb;
+}
+
+.reason .cards .dollar {
+  background: #E9FBF2;
+  color: #5BB38A;
+}
+
+.reason .reason .cards .card h4 {
+  margin: 25px 0 10px;
+  font-size: 1.5rem;
+}
+
+.reason .cards .card p {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .reason .cards .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 992px) {
+  .reason .intro h2 {
+    font-size: 5vmin;
+  }
+
+  .reason .intro p {
+    font-size: 2.5vmin;
+  }
+
+  .reason .cards {
+    flex-direction: row;
+  }
+
+  .reason .cards .card {
+    width: 300px;
+    margin: 40px 30px 30px;
+  }
+}

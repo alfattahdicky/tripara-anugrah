@@ -1,0 +1,83 @@
+.contact {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.contact span {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
+
+.contact span i {
+  margin-right: 10px;
+  font-size: 32px;
+}
+
+.contact-maps {
+  margin: 10px 0 30px;
+  text-align: center;
+}
+
+.contact-maps iframe {
+  width: 90vmin;
+  height: 60vmin;
+}
+
+.wa i {
+  color: #4ac959;
+}
+
+.mail i {
+  color: #e14a40;
+}
+
+@media (min-width: 768px) {
+  header .contact-page p {
+    width: 100%;
+  }
+
+  .contact h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-business {
+    display: grid;
+    grid-template-areas: 'contact maps''contact maps';
+    align-content: center;
+  }
+
+  .contact-business-info {
+    grid-area: contact;
+    place-self: center;
+  }
+
+  .contact-maps {
+    grid-area: maps;
+    justify-self: center;
+  }
+
+
+  .contact-maps iframe {
+    width: 60vmin;
+    height: 40vmin;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-maps iframe {
+    width: 80vmin;
+    height: 60vh;
+  }
+}

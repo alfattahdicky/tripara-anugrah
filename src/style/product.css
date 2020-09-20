@@ -1,0 +1,32 @@
+.product-interior,
+.product-billboard {
+  -webkit-content-visibility: auto;
+  -moz-content-visibility: auto;
+  border-top: 1px solid #ced0ce5e;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.product-interior h2,
+.product-billboard h2 {
+  font-size: 8vmin;
+}
+
+.product-interior p,
+.product-billboard p {
+  font-size: 4.5vmin;
+}
+
+@media (min-width: 768px) {
+
+  .product-interior h2,
+  .product-billboard h2 {
+    font-size: 5vmin;
+  }
+
+  .product-interior p,
+  .product-billboard p {
+    padding: 10px 0;
+    font-size: 2.5vmin;
+  }
+}

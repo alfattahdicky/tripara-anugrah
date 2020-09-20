@@ -1,0 +1,50 @@
+.cooperation {
+  background-color: var(--four-color);
+  height: 350px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cooperation h2 {
+  font-size: 9vmin;
+}
+
+.cooperation p {
+  font-size: 6vmin;
+}
+
+.cooperation .btn-cooperation {
+  background-color: var(--five-color);
+  border: none;
+  margin: 20px 0 0;
+  padding: 15px 30px;
+  font-size: 1em;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.cooperation .btn-cooperation a {
+  color: var(--second-color);
+  text-decoration: none;
+  transition: background-color .2s ease-in;
+}
+
+.cooperation .btn-cooperation:hover {
+  background-color: var(--first-color);
+}
+
+@media (min-width: 768px) {
+  .cooperation h2 {
+    font-size: 6vmin;
+  }
+
+  .cooperation p {
+    font-size: 4vmin;
+  }
+
+}

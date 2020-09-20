@@ -1,0 +1,3 @@
+3. mengganti kata2 bisnis
+4. menggunakan webpack
+5. hosting di netlify dengan github

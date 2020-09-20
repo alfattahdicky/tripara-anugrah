@@ -1,0 +1,120 @@
+.about {
+  -webkit-content-visibility: auto;
+  -moz-content-visibility: auto;
+  background-color: var(--first-color);
+  padding: 10px 30px;
+  line-height: 1.5;
+  color: var(--second-color);
+}
+
+.product {
+  margin: 10px 0;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 8vmin;
+}
+
+.about h3 {
+  font-size: 7vmin;
+}
+
+.about img {
+  width: 100%;
+  height: 100vmin;
+  object-fit: cover;
+  margin: 10px 0 5px;
+}
+
+.about-bilboard {
+  margin-top: 20px;
+}
+
+.about p {
+  font-size: 4.5vmin;
+  color: var(--three-color);
+}
+
+.about .btn {
+  border: none;
+  background: var(--four-color);
+  margin: 1em 0;
+  padding: 0.9em 1.8em;
+  font-size: 3.2vmin;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.about .btn:active {
+  transform: scale(0.9);
+}
+
+.about .btn a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+@media (min-width: 768px) {
+  .about {
+    min-height: 100vh;
+  }
+
+  .about img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  .about h2 {
+    font-size: 6vmin;
+  }
+
+  .about h3 {
+    font-size: 5vmin;
+  }
+
+  .about p {
+    font-size: 2.5vmin;
+  }
+
+  .about .btn {
+    font-size: 2vmin;
+  }
+}
+
+@media (min-width: 992px) {
+  .product {
+    display: grid;
+    grid-template-areas: "image text""image text";
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+    grid-gap: 50px;
+  }
+
+  .about-bilboard {
+    margin: 50px 0 0;
+  }
+
+  .about-interior-img {
+    grid-area: image;
+  }
+
+  .about-bilboard-img {
+    grid-area: text;
+  }
+
+  .about-interior-text {
+    grid-area: text;
+  }
+
+  .about-bilboard-text {
+    text-align: right;
+    grid-area: image;
+  }
+}

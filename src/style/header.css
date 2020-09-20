@@ -1,0 +1,222 @@
+header {
+  background-image: url(../img/lg/kitchen-lg.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+header::after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.301);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.header {
+  display: grid;
+  grid-template-areas: 'logo menu''navbar navbar';
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: relative;
+}
+
+.header .logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--second-color);
+}
+
+.header span {
+  font-size: 4.5vmin;
+  font-weight: 500;
+}
+
+.header .logo img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header .menu {
+  grid-area: menu;
+  display: block;
+  cursor: pointer;
+  color: var(--second-color);
+  font-size: 1.3rem;
+}
+
+.menu.close {
+  display: none;
+}
+
+.header .menu,
+.header .logo {
+  margin: 15px 30px 10px;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: var(--first-color);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 3;
+  transition: opacity .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.navbar.active {
+  opacity: 1;
+}
+
+.navbar li {
+  list-style-type: none;
+  text-align: center;
+  padding: 15px;
+}
+
+.navbar li a {
+  font-size: 4vmin;
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.navbar li:hover {
+  background-color: var(--second-color);
+}
+
+.navbar li:hover a {
+  color: var(--first-color);
+}
+
+.title {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  min-height: 80vh;
+  padding: 20px;
+  color: var(--second-color);
+}
+
+.title h1 {
+  margin: 10px 0 0;
+  width: 20ch;
+  font-size: 9vmin;
+}
+
+.title p {
+  width: 80%;
+  margin: 5px 0 20px;
+  font-size: 5vmin;
+  color: var(--second-color);
+}
+
+.title .btn {
+  border: none;
+  background: var(--five-color);
+  padding: 0.9em 1.8em;
+  font-size: 3.8vmin;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  transform: scale(1);
+}
+
+.title .btn a {
+  text-decoration: none;
+  color: var(--second-color);
+}
+
+.title .btn:active {
+  transform: scale(0.98);
+}
+
+@media (min-width: 768px) {
+  .header .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title h1 {
+    font-size: 7vmin;
+  }
+
+  .title p {
+    font-size: 5vmin;
+  }
+
+  .title .btn {
+    font-size: 2.5vmin;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu {
+    grid-area: navbar;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .navbar {
+    padding: 20px;
+    grid-area: menu;
+    background: transparent;
+    opacity: 1;
+  }
+
+  .navbar li {
+    display: inline-block;
+    border-radius: var(--border-radius);
+    margin-right: 0.5em;
+    font-weight: 500;
+  }
+
+  .navbar .link {
+    background-color: var(--first-color);
+  }
+
+  .navbar li a {
+    font-size: 3vmin;
+    color: var(--second-color);
+  }
+
+  .navbar .link a {
+    color: var(--second-color);
+  }
+
+  .navbar li:hover {
+    background-color: var(--first-color);
+  }
+
+  .navbar li:hover a {
+    color: var(--second-color);
+  }
+
+  .title h1 {
+    width: 100%;
+    font-size: 6vmin;
+  }
+
+  .title p {
+    font-size: 4vmin;
+  }
+
+  .title .btn {
+    font-size: 2.5vmin;
+  }
+}

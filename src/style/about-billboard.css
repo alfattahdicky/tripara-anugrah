@@ -1,0 +1,68 @@
+.billboard-about {
+  padding: 10px 2em;
+  min-height: 100vh;
+  color: var(--first-color);
+}
+
+.billboard-about h2 {
+  text-align: center;
+  font-size: 8vmin;
+}
+
+.billboard-about img {
+  margin: 20px auto;
+  width: 100%;
+  height: 100vmin;
+  object-fit: cover;
+}
+
+.billboard-about h3 {
+  font-size: 7vmin;
+}
+
+.billboard-about p {
+  font-size: 4.5vmin;
+}
+
+@media (min-width: 768px) {
+  .billboard-about img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+  }
+
+  .billboard-about h2 {
+    font-size: 5vmin;
+  }
+
+  .billboard-about h3 {
+    font-size: 3vmin;
+  }
+
+  .billboard-about p {
+    font-size: 2.5vmin;
+  }
+}
+
+@media (min-width: 992px) {
+  .billboard-about-row {
+    display: grid;
+    grid-template-areas: 'hero material''hero price';
+    align-items: center;
+    grid-gap: 50px;
+    margin-top: 20px;
+  }
+
+  .billboard-about-row-image {
+    grid-area: hero;
+  }
+
+  .billboard-about-row-material {
+    grid-area: material;
+  }
+
+  .billboard-about-row-price {
+    grid-area: price;
+    align-self: start;
+  }
+}
