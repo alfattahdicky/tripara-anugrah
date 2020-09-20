@@ -85,30 +85,30 @@ class ProductInterior extends HTMLElement {
       </div>
       <div class="product-interior-image-card">
         <img src="./img/sm/resepsionist-sm.jpg" alt="Receptionist Table" data-original="./img/lg/resepsionist-lg.jpg"
-          loading="lazy">
+        >
         <p>Receptionist Table</p>
       </div>
       <div class="product-interior-image-card">
         <img src="./img/sm/living-room-sm.jpg" alt="Living Room" data-original="./img/lg/living-room-large.jpg"
-          loading="lazy">
+        >
         <p>Living Room</p>
       </div>
       <div class="product-interior-image-card">
         <img src="./img/sm/workshop-sm.jpg" alt="Workshop" data-original="./img/lg/workshop-large.jpg"
-          loading="lazy">
+        >
         <p>Workshop</p>
       </div>
       <div class="product-interior-image-card">
-        <img src="./img/sm/wardrop-sm.jpg" alt="Wardrobe" data-original="./img/lg/wardrop-lg.jpg" loading="lazy">
+        <img src="./img/sm/wardrop-sm.jpg" alt="Wardrobe" data-original="./img/lg/wardrop-lg.jpg">
         <p>Wardrobe</p>
       </div>
       <div class="product-interior-image-card">
-        <img src="./img/sm/kitchen-sm.jpg" alt="Kitchen" data-original="./img/lg/kitchen-lg.jpg" loading="lazy">
+        <img src="./img/sm/kitchen-sm.jpg" alt="Kitchen" data-original="./img/lg/kitchen-lg.jpg">
         <p>Kitchen</p>
       </div>
     </div>
     <div class="modal">
-      <img src="./img/lg/kitchen-lg.jpg" alt="Beatiful Sea" class="full-img" loading="lazy">
+      <img src="./img/lg/kitchen-lg.jpg" alt="Beatiful Sea" class="full-img">
       <p class="caption">Hello World</p>
     </div>
     `;

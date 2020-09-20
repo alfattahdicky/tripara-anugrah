@@ -80,35 +80,35 @@ class ProductBillboard extends HTMLElement {
       </style>
       <div class="product-billboard-image">
       <div class="product-billboard-image-card">
-        <img src="./img/sm/geometri-sm.jpg" alt="Geometri" data-original="./img/lg/geometri-lg.jpg" loading="lazy">
+        <img src="./img/sm/geometri-sm.jpg" alt="Geometri" data-original="./img/lg/geometri-lg.jpg">
         <p>Geometri</p>
       </div>
       <div class="product-billboard-image-card">
         <img src="./img/sm/led-sm.jpg" alt="LED Billboard" data-original="./img/lg/led-lg.jpg"
-          loading="lazy">
+        >
         <p>LED Billboard</p>
       </div>
       <div class="product-billboard-image-card">
-        <img src="./img/sm/neon-sm.jpg" alt="Neon Box" data-original="./img/lg/neon-lg.jpg"
-          loading="lazy">
+        <img src="./img/sm/fitness-first-sm.jpg" alt="Neon Box" data-original="./img/lg/fitness-first-lg.jpg"
+        >
         <p>Neon Box</p>
       </div>
       <div class="product-billboard-image-card">
         <img src="./img/sm/neon-sign-sm.jpg" alt="Neon Sign" data-original="./img/lg/neon-sign-lg.jpg"
-          loading="lazy">
+        >
         <p>Neon Sign</p>
       </div>
       <div class="product-billboard-image-card">
-        <img src="./img/sm/neon-two-sm.jpg" alt="Neon Box" data-original="./img/lg/neon-two-lg.jpg" loading="lazy">
+        <img src="./img/sm/neon-two-sm.jpg" alt="Neon Box" data-original="./img/lg/neon-two-lg.jpg">
         <p>Neon Box</p>
       </div>
       <div class="product-billboard-image-card">
-        <img src="./img/sm/led-billboard-two-sm.jpg" alt="LED Billboard" data-original="./img/lg/led-billboard-two-lg.jpg" loading="lazy">
+        <img src="./img/sm/led-billboard-two-sm.jpg" alt="LED Billboard" data-original="./img/lg/led-billboard-two-lg.jpg">
         <p>LED Billboard</p>
       </div>
     </div>
     <div class="modal">
-      <img src="./img/lg/kitchen-lg.jpg" alt="Beatiful Sea" class="full-img" loading="lazy">
+      <img src="./img/lg/kitchen-lg.jpg" alt="Beatiful Sea" class="full-img">
       <p class="caption">Hello World</p>
     </div>
     `;
